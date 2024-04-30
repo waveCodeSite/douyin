@@ -6,7 +6,6 @@ import { Plugin as importToCDN } from 'vite-plugin-cdn-import'
 import { fileURLToPath, URL } from 'node:url'
 import { getLastCommit } from 'git-last-commit'
 import VueMacros from 'unplugin-vue-macros/vite'
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 // import viteImagemin from 'vite-plugin-imagemin'
 // import viteCompression from 'vite-plugin-compression'
