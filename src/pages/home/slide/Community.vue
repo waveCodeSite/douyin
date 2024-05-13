@@ -149,7 +149,7 @@ function showDetail(e, item) {
   let s = document.querySelector('.shadow')
 
   _css(s, 'z-index', '1')
-  _css(s, 'transition', '0s')
+  _css(s, 'transition', 'all 0s')
   _css(s, 'top', domRect.top)
   _css(s, 'left', domRect.left)
   _css(s, 'width', domRect.width)
@@ -255,6 +255,7 @@ function showDetail(e, item) {
   .bottom {
     color: gainsboro;
     padding: 10rem;
+    padding-bottom: 15rem;
 
     .title {
       font-size: 14rem;

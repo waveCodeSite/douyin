@@ -16,17 +16,18 @@
 `douyin-vue`es una parodia`抖音|TikTok`Proyecto de vídeo corto móvil.`Vue`"Mejores prácticas" en el lado móvil, comparables a las nativas`App`Experiencia sedosa y suave. Usado lo último`Vue`pila de tecnología, basada en[`Vue3`](https://cn.vuejs.org/)、[`Vite5`](https://cn.vitejs.dev/)、[`Pinia`](https://pinia.vuejs.org/)lograr. Los datos se guardan localmente en el proyecto a través de[`axios-mock-adapter`](https://github.com/ctimmerm/axios-mock-adapter)La biblioteca intercepta la API y devuelve datos json locales para simular solicitudes de backend reales.
 
 <div>
-<img width="150px" src='imgs/1.gif' />
-<img width="150px" src='imgs/2.gif' />
-<img width="150px" src='imgs/3.gif' />
-<img width="150px" src='imgs/4.gif' />
-<img width="150px" src='imgs/5.gif' />
+<img width="150px" src='docs/imgs/1.gif' />
+<img width="150px" src='docs/imgs/2.gif' />
+<img width="150px" src='docs/imgs/3.gif' />
+<img width="150px" src='docs/imgs/4.gif' />
+<img width="150px" src='docs/imgs/5.gif' />
 </div>
 
 ## Acceso en linea
 
-Páginas de casas rurales:<https://zyronon.gitee.io/douyin/>(Se recomienda visitar esta dirección en China)  
-Nota: Las páginas de Gitee no se pueden actualizar ahora, el código no está actualizado. Si puede eludir el firewall, le recomiendo visitar la siguiente dirección:
+[//]: # "Gitee Pages: [https://zyronon.gitee.io/douyin/](https://zyronon.gitee.io/douyin/)(中国地区推荐访问这个地址)   "
+
+[//]: # "注意：Gitee Pages现在无法更新，代码不是最新的。如果你能翻墙推荐访问下面地址  "
 
 Páginas de Github:<https://dy.ttentau.top/>
 
@@ -48,9 +49,9 @@ Páginas de Github:<https://dy.ttentau.top/>
 
 \[Serie Imitación Douyin] 1:[200 líneas de código para implementar un componente carrusel similar a Swiper.js](https://juejin.cn/post/7360512664317018146)  
 \[Serie Imitación Douyin] 2:[Realice el efecto de "vídeo deslizante infinito" en Douyin](https://juejin.cn/post/7361614921519054883)  
-\[Serie Imitación Douyin] Tres:[Introducción al uso del enrutamiento de Vue y la adición de animaciones de transición](https://juejin.cn/post/7362528152777130025)
-
-Más artículos están en preparación...
+\[Serie Imitación Douyin] Tres:[Vue 路由使用介绍以及添加转场动画](https://juejin.cn/post/7362528152777130025)  
+\[Serie Imitación Douyin] Cuatro:[Almacenamiento en caché de rutas condicionales de Vue, al igual que los sitios de noticias tradicionales](https://juejin.cn/post/7365334891473240101)  
+\[Serie Imitación Douyin] Cinco:[Github Actions implementa páginas, sincroniza con Gitee, traduce README, empaqueta la imagen de la ventana acoplable](https://juejin.cn/post/7365757742381957161)
 
 ## correr
 
@@ -60,7 +61,19 @@ Nota: Este proyecto sólo es apto para estudio e investigación, no para uso com
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/zyronon/douyin)
 
+### Implementar en Docker
+
+```bash
+# pull Docker image
+docker pull ghcr.io/zyronon/douyin-vue:latest
+
+# start container, nginx reverse proxy custom port, for example: docker run -d -p 80:80 ghcr.io/zyronon/douyin-vue:latest
+docker run -d -p 80:80 ghcr.io/zyronon/douyin-vue:latest
+```
+
 ### desarrollo local
+
+**Nota: El comando git debe clonarse para ejecutarse. No se puede ejecutar la descarga del paquete zip. Si la velocidad de clonación es demasiado lenta, se recomienda utilizar la dirección del albergue**
 
 ```bash
 git clone https://gitee.com/zyronon/douyin.git (中国使用)
@@ -94,7 +107,7 @@ El video proviene de las siguientes celebridades de Douyin.
 
 Imagen de las notas públicas de Xiaohongshu.
 
-El contenido anterior es toda información pública en Internet.
+以上内容均是互联网公开信息
 
 ## Funciones y sugerencias
 
@@ -107,7 +120,7 @@ Puedes contactar a mi correo<a href="mailto:zyronon@163.com">zyronon@163.com</a>
 
 > Comparta mis otros proyectos de código abierto:
 >
-> _[**Escribir palabra**- Software de memorización de vocabulario que se puede utilizar en la web ~](https://github.com/zyronon/typing-word)<img src="https://img.shields.io/github/stars/zyronon/typing-word.svg?style=flat-square&label=Star&color=4285dd&logo=github" height="16px" />_  
+> _[**Escribir palabra**- Software de memorización de vocabulario que se puede utilizar en la web ~](https://github.com/zyronon/typing-word) <img src="https://img.shields.io/github/stars/zyronon/typing-word.svg?style=flat-square&label=Star&color=4285dd&logo=github" height="16px" />_  
 > _[**Guiones web**- Algunos scripts útiles de Grease Monkey~](https://github.com/zyronon/web-scripts)<img src="https://img.shields.io/github/stars/zyronon/web-scripts.svg?style=flat-square&label=Star&color=4285dd&logo=github" height="16px" />_
 
 ## acuerdo

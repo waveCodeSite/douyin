@@ -16,17 +16,18 @@
 `douyin-vue`est une parodie`抖音|TikTok`projet de courte vidéo mobile.`Vue`Des « bonnes pratiques » côté mobile, comparables au natif`App`Expérience soyeuse et douce. Utilisé le dernier`Vue`pile technologique, basée sur[`Vue3`](https://cn.vuejs.org/)、[`Vite5`](https://cn.vitejs.dev/)、[`Pinia`](https://pinia.vuejs.org/)accomplir. Les données sont enregistrées localement dans le projet via[`axios-mock-adapter`](https://github.com/ctimmerm/axios-mock-adapter)La bibliothèque intercepte l'API et renvoie des données json locales pour simuler de véritables requêtes backend.
 
 <div>
-<img width="150px" src='imgs/1.gif' />
-<img width="150px" src='imgs/2.gif' />
-<img width="150px" src='imgs/3.gif' />
-<img width="150px" src='imgs/4.gif' />
-<img width="150px" src='imgs/5.gif' />
+<img width="150px" src='docs/imgs/1.gif' />
+<img width="150px" src='docs/imgs/2.gif' />
+<img width="150px" src='docs/imgs/3.gif' />
+<img width="150px" src='docs/imgs/4.gif' />
+<img width="150px" src='docs/imgs/5.gif' />
 </div>
 
 ## Accès en ligne
 
-Pages du gîte :<https://zyronon.gitee.io/douyin/>(Il est recommandé de visiter cette adresse en Chine)  
-Remarque : Les pages Gitee ne peuvent pas être mises à jour pour le moment, le code n'est pas à jour. Si vous pouvez contourner le pare-feu, je vous recommande de visiter l'adresse suivante :
+[//]: # "Gitee Pages: [https://zyronon.gitee.io/douyin/](https://zyronon.gitee.io/douyin/)(中国地区推荐访问这个地址)   "
+
+[//]: # "注意：Gitee Pages现在无法更新，代码不是最新的。如果你能翻墙推荐访问下面地址  "
 
 Pages GitHub :<https://dy.ttentau.top/>
 
@@ -48,9 +49,9 @@ Pages GitHub :<https://dy.ttentau.top/>
 
 \[Série Imitation Douyin] 1 :[200 lignes de code pour implémenter un composant carrousel similaire à Swiper.js](https://juejin.cn/post/7360512664317018146)  
 \[Série Imitation Douyin] 2 :[Réaliser l'effet "vidéo coulissante infinie" sur Douyin](https://juejin.cn/post/7361614921519054883)  
-\[Série Imitation Douyin] Trois :[Introduction à l'utilisation du routage Vue et à l'ajout d'animations de transition](https://juejin.cn/post/7362528152777130025)
-
-D'autres articles sont en préparation...
+\[Série Imitation Douyin] Trois :[Introduction à l'utilisation du routage Vue et à l'ajout d'animations de transition](https://juejin.cn/post/7362528152777130025)  
+\[Série Imitation Douyin] Quatre :[Mise en cache des routes conditionnelles Vue, tout comme les sites d'information traditionnels](https://juejin.cn/post/7365334891473240101)  
+\[Série Imitation Douyin] Cinq :[Les actions Github déploient des pages, synchronisent avec Gitee, traduisent README, emballent l'image Docker](https://juejin.cn/post/7365757742381957161)
 
 ## courir
 
@@ -60,7 +61,19 @@ Remarque : ce projet convient uniquement à l'étude et à la recherche, et non
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/zyronon/douyin)
 
+### Déployer sur Docker
+
+```bash
+# pull Docker image
+docker pull ghcr.io/zyronon/douyin-vue:latest
+
+# start container, nginx reverse proxy custom port, for example: docker run -d -p 80:80 ghcr.io/zyronon/douyin-vue:latest
+docker run -d -p 80:80 ghcr.io/zyronon/douyin-vue:latest
+```
+
 ### développement local
+
+**Remarque : La commande git doit être clonée pour s'exécuter. Le téléchargement du package zip ne peut pas s'exécuter. Si la vitesse de clonage est trop lente, il est recommandé d'utiliser l'adresse du gîte**
 
 ```bash
 git clone https://gitee.com/zyronon/douyin.git (中国使用)

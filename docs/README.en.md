@@ -13,20 +13,21 @@
   <a><img src="https://img.shields.io/badge/Powered%20by-Vue-blue"/></a>
 </p>
 
-`douyin-vue`is a parody`抖音|TikTok`mobile short video project.`Vue`"Best practices" on the mobile side, comparable to native`App`Silky and smooth experience. Used the latest`Vue`technology stack, based on[`Vue3`](https://cn.vuejs.org/)、[`Vite5`](https://cn.vitejs.dev/)、[`Pinia`](https://pinia.vuejs.org/)accomplish. The data is saved locally in the project through[`axios-mock-adapter`](https://github.com/ctimmerm/axios-mock-adapter)The library intercepts the API and returns local json data to simulate real backend requests.
+`douyin-vue`is a parody`抖音|TikTok`mobile short video project.`Vue`"Best practices" on the mobile side, comparable to native`App` 丝滑流畅的使用体验。使用了最新的 `Vue`technology stack, based on[`Vue3`](https://cn.vuejs.org/)、[`Vite5`](https://cn.vitejs.dev/)、[`Pinia`](https://pinia.vuejs.org/)accomplish. The data is saved locally in the project through[`axios-mock-adapter`](https://github.com/ctimmerm/axios-mock-adapter)The library intercepts the API and returns local json data to simulate real backend requests.
 
 <div>
-<img width="150px" src='imgs/1.gif' />
-<img width="150px" src='imgs/2.gif' />
-<img width="150px" src='imgs/3.gif' />
-<img width="150px" src='imgs/4.gif' />
-<img width="150px" src='imgs/5.gif' />
+<img width="150px" src='docs/imgs/1.gif' />
+<img width="150px" src='docs/imgs/2.gif' />
+<img width="150px" src='docs/imgs/3.gif' />
+<img width="150px" src='docs/imgs/4.gif' />
+<img width="150px" src='docs/imgs/5.gif' />
 </div>
 
 ## Online access
 
-Gitee Pages:<https://zyronon.gitee.io/douyin/>(It is recommended to visit this address in China)  
-Note: Gitee Pages cannot be updated now, the code is not up to date. If you can circumvent the firewall, I recommend visiting the following address:
+[//]: # "Gitee Pages: [https://zyronon.gitee.io/douyin/](https://zyronon.gitee.io/douyin/)(中国地区推荐访问这个地址)   "
+
+[//]: # "注意：Gitee Pages现在无法更新，代码不是最新的。如果你能翻墙推荐访问下面地址  "
 
 Github Pages:<https://dy.ttentau.top/>
 
@@ -48,9 +49,9 @@ Github Pages:<https://dy.ttentau.top/>
 
 \[Imitation Douyin Series] 1:[200 lines of code to implement a carousel component similar to Swiper.js](https://juejin.cn/post/7360512664317018146)  
 \[Imitation Douyin Series] 2:[Realize the "infinite sliding video" effect on Douyin](https://juejin.cn/post/7361614921519054883)  
-\[Imitation Douyin Series] Three:[Introduction to using Vue routing and adding transition animations](https://juejin.cn/post/7362528152777130025)
-
-More articles are in preparation...
+\[Imitation Douyin Series] Three:[Introduction to using Vue routing and adding transition animations](https://juejin.cn/post/7362528152777130025)  
+\[Imitation Douyin Series] Four:[Vue conditional route caching, just like traditional news sites](https://juejin.cn/post/7365334891473240101)  
+\[Imitation Douyin Series] Five:[Github Actions deploy Pages, synchronize to Gitee, translate README, package docker image](https://juejin.cn/post/7365757742381957161)
 
 ## run
 
@@ -60,7 +61,19 @@ Note: This project is only suitable for study and research, not for commercial u
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/zyronon/douyin)
 
+### Deploy to Docker
+
+```bash
+# pull Docker image
+docker pull ghcr.io/zyronon/douyin-vue:latest
+
+# start container, nginx reverse proxy custom port, for example: docker run -d -p 80:80 ghcr.io/zyronon/douyin-vue:latest
+docker run -d -p 80:80 ghcr.io/zyronon/douyin-vue:latest
+```
+
 ### local development
+
+**Note: The git command must be cloned to run. Downloading the zip package cannot run. If the clone speed is too slow, it is recommended to use the gitee address**
 
 ```bash
 git clone https://gitee.com/zyronon/douyin.git (中国使用)
@@ -72,7 +85,7 @@ npm run dev
 
 Open your browser and visit:<http://127.0.0.1:3000>
 
-**Note: You need to switch the browser to mobile mode, first press`F12`To bring up the console, press`Ctrl+Shift+M`to preview normally**
+**注意：需要将浏览器切至手机模式，先按 `F12`To bring up the console, press`Ctrl+Shift+M`to preview normally**
 
 ## Data Sources
 
@@ -98,10 +111,10 @@ The above content is all public information on the Internet
 
 ## Features and suggestions
 
-The project is currently in the early stages of development, and new features are being added continuously. If you have any features or suggestions for the software, please feel free to contact us.`Issues`raised in
+The project is currently in the early stages of development and new features are being added continuously. If you have any features or suggestions for the software, please feel free to contact us.`Issues`raised in
 If you also like the design ideas of this software, please submit it`PR`, thank you very much for your support!
 
-## 联系我
+## contact me
 
 You can contact my email<a href="mailto:zyronon@163.com">zyronon@163.com</a>
 
